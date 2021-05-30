@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BeChange</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar navbar-toggleable-md navbar-light pt-0 pb-0 ">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand p-0 mr-5" href="#"><img src="peroplengo.png" height="50" width="80" alt="BeChange"></a>
+        <div class="float-left"> <a href="#" class="button-left"><span class="fa fa-fw fa-bars "></span></a> </div>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown messages-menu">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="label label-success bg-success">6</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <ul class="dropdown-menu-over list-unstyled">
+                            <li class="header-ul text-center">You have 4 messages</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item dropdown notifications-menu">
+                    <a class="nav-link dropdown-toggle" href="#" id="qr1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="label label-warning bg-warning">9</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown  user-menu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="usercircle.png" class="user-image" alt="User Image" >
+                        <span class="hidden-xs">merxhanbajrami</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="main" style="display: flex; justify-content: space-between;">
+    <div class="col-4" style="margin-left: -15px;">
+        <aside>
+            <div class="sidebar left ">
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="usericon.svg" class="rounded-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>merxhanbajrami</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>
+                <ul class="list-sidebar bg-defoult">
+                    <li>
+                        <a href="#"><i class="fa fa-search"></i> <span class="nav-label">Search</span></a> </li>
+                    <li>
+                        <a href="index.html" data-toggle="collapse" data-target="#dashboard" class="collapsed active" >
+                            <i class="fa fa-th-large"></i> <span class="nav-label"> Dashboard </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forum.html"><i class="fa fa-diamond"></i> <span class="nav-label">Forum</span></a> </li>
+                    <li>
+                        <a href="final.html" data-toggle="collapse" data-target="#tables" class="collapsed active" ><i class="fa fa-users"></i> <span class="nav-label">Initiatives</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-calendar"></i> <span class="nav-label">Events</span></a> </li>
+                    <li>
+                        <a href="" data-toggle="collapse" data-target="#products" class="collapsed active" > <i class="fa fa-bar-chart-o"></i> <span class="nav-label">History</span></a>
+                    </li>
+                    <li>
+                        <a href="initiatives.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">My activity</span> </a>
+                    </li>
+                    <li> <a href="#"><i class="fa fa-cogs"></i> <span class="nav-label">Settings</span></a> </li>
+                    <li> <a href="#"><i class="fa fa-info"></i> <span class="nav-label">About</span></a> </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <div class="col-8">
+        <div class="location py-5">
+            <div class="row text-center pt-4">
+                <div class="col-md-12 mb-5 mt-5">
+                    <a type="button" class="btn btn-danger" href="form.html">Create initiative</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row pb-4 text-center">
+                    <div class="col-md-12">
+                        <h2>Find all initiatives by locations </h2>
+                        <p> Here you can find all the initiatives/projects listed by the place they take action in</p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-2 box border py-4">
+
+                        <button type="button" class="btn btn-light"><i class="fa fa-map-marker fa-1x "></i> Skopje</button>
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <button type="button" class="btn btn-light"><i class="fa fa-map-marker fa-1x "></i> Kumanovo</button>
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <button type="button" class="btn btn-light"><i class="fa fa-map-marker fa-1x "></i> Prilep</button>
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <button type="button" class="btn btn-light"><i class="fa fa-map-marker fa-1x "></i> Stip</button>
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <button type="button" class="btn btn-light"><i class="fa fa-map-marker fa-1x "></i> Ohrid</button>
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <button type="button" class="btn btn-light"><i class="fa fa-map-marker fa-1x "></i> Struga</button>
+                    </div>
+
+
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-2 box border py-4">
+
+                        <button type="button" class="btn btn-light"><i class="fa fa-map-marker fa-1x "></i> Gostivar</button>
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <button type="button" class="btn btn-light"><i class="fa fa-map-marker fa-1x "></i> Tetovo</button>
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <button type="button" class="btn btn-light"><i class="fa fa-map-marker fa-1x "></i> Strumica</button>
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <button type="button" class="btn btn-light"><i class="fa fa-map-marker fa-1x "></i> Debar</button>
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <button type="button" class="btn btn-light"><i class="fa fa-map-marker fa-1x "></i> Kicevo</button>
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <button type="button" class="btn btn-light">
+                            <i class="fa fa-map-marker fa-1x "></i> Gevgelija</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="brand-search py-5">
+            <div class="container">
+                <div class="row pb-4 text-center">
+                    <div class="col-md-12">
+                        <h2>Search initiative by category</h2>
+                        <p> Here you can find all the initiatives by the categories they belong to.</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-envira fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Environment</h6></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-balance-scale fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Justice </h6></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-bars fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Sports </h6></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-child fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Children </h6></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-bars fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Education </h6></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-bars fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Art & Culture </h6></a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-bars fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Test </h6></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-bars fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Test </h6></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-bars fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Test </h6></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-bars fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Animals </h6></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-bars fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Youth </h6></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2 box border py-4">
+                        <div class="box-carimage">
+                            <i class="fa fa-bars fa-1x"></i>
+                        </div>
+                        <div class="box-cartitle">
+                            <a href="#"><h6> Human rights </h6></a>
+                        </div>
+
+
+                    </div>
+                </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.button-left').click(function(){
+            $('.sidebar').toggleClass('fliph');
+        });
+
+    });
+</script>
+<style>
+    /************* GENERIC  *****************/
+    a {color:#696969;}
+    img {width:100%;}
+    .twhite {color:#fff!important;}
+    /************* TOP-HEAD *****************/
+    .top-head ul li {padding-right:8px;}
+    /****************** Navigation **************/
+    .navbar-toggler {border-color: #dd0000;}
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(221, 0, 0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    /**************** Banner Slider Carousel **************/
+    .carousel-inner img {width: 100%;}
+    .carousel-caption {color:#000;top:110px; bottom: auto; text-align:left;}
+    .carousel-caption h1 { color:#dd0000; background-color:#;}
+    /************ Services **************/
+    .most-car-box:hover {background: ; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+    /*********** TABS *******/
+    .nav-tabs { border-bottom: 1px solid #ccc; }
+    .nav-tabs .nav-link.active {
+        border-bottom: 1px solid #dd0000;
+        border-radius:0px;
+    }
+    /**************** Social ICONS ***************/
+    /* Social Icons */
+
+    .social-icons{margin: 0;padding: 0; font-size : 10px;}
+    .social {margin:7px 7px 7px 0px;}
+    #social-fb:hover {color: #3B5998;transition:all .25s;}
+    #social-tw:hover {color: #4099FF;transition:all .25s;}
+    #social-gp:hover {color: #d34836;transition:all .25s;}
+    #social-em:hover {color: #f39c12;transition:all .25s;}
+
+    .card-counter{
+        box-shadow: 2px 2px 10px #DADADA;
+        margin: 5px;
+        padding: 20px 10px;
+        background-color: #fff;
+        height: 100px;
+        border-radius: 5px;
+        transition: .3s linear all;
+    }
+
+    .card-counter:hover{
+        box-shadow: 4px 4px 20px #DADADA;
+        transition: .3s linear all;
+    }
+
+    .card-counter.primary{
+        background-color: #007bff;
+        color: #FFF;
+    }
+
+    .card-counter.danger{
+        background-color: #ef5350;
+        color: #FFF;
+    }
+
+    .card-counter.success{
+        background-color: #66bb6a;
+        color: #FFF;
+    }
+
+    .card-counter.info{
+        background-color: #26c6da;
+        color: #FFF;
+    }
+
+    .card-counter i{
+        font-size: 5em;
+        opacity: 0.2;
+    }
+
+    .card-counter .count-numbers{
+        position: absolute;
+        right: 35px;
+        top: 20px;
+        font-size: 32px;
+        display: block;
+    }
+
+    .card-counter .count-name{
+        position: absolute;
+        right: 35px;
+        top: 65px;
+        font-style: italic;
+        text-transform: capitalize;
+        opacity: 0.5;
+        display: block;
+        font-size: 18px;
+    }
+</style>
+</body>
+</html>
